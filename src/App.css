@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html,body {
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn {
+  width: 30%;
+  outline: none;
+  border: none;
+  margin: 1.5rem;
+  padding: 1rem;
+  background-color: rgb(38, 236, 38);
+  color: rgb(192, 0, 0);;
+  font-family: 'Press Start 2P', cursive;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  width: 60%;
+  margin: 6rem auto;
+  display: block;
+  border: 3px solid blue;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: c;
+  padding: 0 1rem;
+  font-family: 'Press Start 2P', cursive;
+  font-weight: 100;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  color: rgb(87, 203, 241);
+  font-size: 2.4rem;
+  margin: 1.5rem 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  color: rgb(87, 203, 241);
+  font-size: 2rem;
+  margin: 1.5rem 0;
+}
+
+h3 {
+  color: rgb(192, 0, 0);
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+h4 {
+  color: black;
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
+
+.highScoreTable {
+  border: 15px solid rgb(38, 236, 38);
+  width: 100%;
+  box-sizing: border-box;
+  margin: 1rem;
+  text-align: center;
+}
+
+.playerScores {
+  display: block;
+  border: 2px solid black;
+  margin: 1rem;
+  padding: 0 0.3rem;
+  padding-bottom: 1rem;
+}
+
+.playerScore {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 2px solid black;
+  margin-top: 0.5rem;
+}
+
+.playerScore * {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 0.4rem;
 }
